@@ -36,4 +36,20 @@ class Solution {
             arr[n - i - 1] = temp;
         }
     }
+
+
+//simple reverse logic
+void rev(int[] arr,int left,int right) {
+   while (left < right) {
+      swap(arr, left, right); //if swap function is defined 
+      left++;
+      right--;
+}
+
+//correct logic of swap function
+void swap(int[] array,int i,int j) {
+     int temp=array[i];
+     array[i]=array[j];
+     array[j]=temp;  
+  }
 }
